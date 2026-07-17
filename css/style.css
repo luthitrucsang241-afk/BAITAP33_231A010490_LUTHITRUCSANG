@@ -1,0 +1,304 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #f4f4f4;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* MENU */
+
+nav {
+
+    background: #333;
+
+    padding: 15px;
+
+    text-align: center;
+
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-size: 18px;
+
+}
+
+
+
+nav a:hover {
+
+    color: #ffcc00;
+
+}
+
+
+
+/* TRANG CHỦ */
+
+
+header {
+
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+
+.avatar {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* NỘI DUNG */
+
+
+section {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+
+}
+
+
+
+.project {
+
+    background: white;
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+/* ĐÈN KÉO QUÂN */
+
+
+.title {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    color: #222;
+
+}
+
+
+
+.scene {
+
+    width: 450px;
+
+    height: 450px;
+
+    margin: 70px auto;
+
+    perspective: 1200px;
+
+}
+
+
+
+.lantern {
+
+    width: 100%;
+
+    height: 100%;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+
+    animation: quay 12s linear infinite;
+
+}
+
+
+
+.face {
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 240px;
+
+    left: 135px;
+
+    top: 100px;
+
+}
+
+
+
+.face img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 5px solid white;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/* 6 MẶT */
+
+.face:nth-child(1) {
+
+    transform: rotateY(0deg) translateZ(220px);
+
+}
+
+
+.face:nth-child(2) {
+
+    transform: rotateY(60deg) translateZ(220px);
+
+}
+
+
+.face:nth-child(3) {
+
+    transform: rotateY(120deg) translateZ(220px);
+
+}
+
+
+.face:nth-child(4) {
+
+    transform: rotateY(180deg) translateZ(220px);
+
+}
+
+
+.face:nth-child(5) {
+
+    transform: rotateY(240deg) translateZ(220px);
+
+}
+
+
+.face:nth-child(6) {
+
+    transform: rotateY(300deg) translateZ(220px);
+
+}
+
+
+
+
+@keyframes quay {
+
+
+    from {
+
+        transform: rotateY(0deg);
+
+    }
+
+
+    to {
+
+        transform: rotateY(360deg);
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:700px) {
+
+
+    .scene {
+
+        width: 300px;
+
+        height: 300px;
+
+    }
+
+
+
+    .face {
+
+        width: 120px;
+
+        height: 170px;
+
+        left: 90px;
+
+        top: 70px;
+
+    }
+
+
+}
